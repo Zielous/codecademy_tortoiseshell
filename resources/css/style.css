@@ -23,9 +23,11 @@
     line-height: 1.4;
   }
 
-  .container--maxwidth {
+  .container--limit-screen-width {
     width: 95%;
   }
+
+
 
 
 
@@ -42,16 +44,28 @@
     color: white;
   }
 
-.caps__upper {
-  font-weight: bold;
-  text-align: center;
-}
+  .caps__upper {
+    font-weight: bold;
+    text-align: center;
+  }
 
 
 
 /*----------*\
 #HEADER-SECTION
 \*----------*/
+
+  .header--float {
+    position: fixed; /* float menu bar */
+    z-index: 10;
+  }
+
+    .below-header {
+      position: relative; /* everything else behind menu bar */
+      padding-top: 3rem;
+    }
+
+
 
   .header__logo {
     justify-content: flex-start;
@@ -66,18 +80,28 @@
 
   .header__menu {
     justify-content: flex-end;
-    margin: 1rem 2rem;
   }
+
+    .menu__ul {
+      justify-content: flex-end;
+      margin-right: 1rem;
+    }
+
+    .menu__li {
+      margin: 1rem 1rem;
+    }
+
+
 
 
 
 
 
 /*----------*\
-#HERO-BANNER-SECTION
+#BANNER-HERO-SECTION
 \*----------*/
 
-  .hero-banner {
+  .banner__hero {
     background-image: url("../images/glasses-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -85,7 +109,7 @@
     height: 17rem;
   }
 
-    .hero-banner__title {
+    .hero__title {
       margin-top: 9rem;
       padding: 1rem 0;
       background-color: white;
@@ -98,10 +122,10 @@
 
 
 /*----------*\
-#HERO-BANNER-SECTION
+#FEATURES-SECTION
 \*----------*/
 
-  .features-section {
+  .section__features {
     margin: 3.77rem 0;
     flex-wrap: wrap;
   }
@@ -130,8 +154,8 @@
 
   .highlights,
   .highlight {
-      flex-direction: column;
-    }
+    flex-direction: column;
+  }
 
     .highlight__title {
       width: 100%;
@@ -142,3 +166,130 @@
       margin: 1rem 0 4rem 0;
       font-size: 0.77rem;
     }
+
+
+
+
+
+/*----------*\
+#FOOTER-SECTION
+\*----------*/
+
+  .copyright--bg {
+    background-color: azure;
+  }
+
+    .copyright__logo {
+      height: 1.5rem;
+      padding: 4rem 0;
+    }
+
+
+
+
+
+
+/*----------*\
+#RESPONSIVE-DESIGNS
+\*----------*/
+
+  @media only screen
+    and (min-width: 470px) {
+    /* Selectors for tablet screens and bigger */
+
+    .container--limit-screen-width {
+      width: 90%;
+    }
+
+    .logo__text {
+      margin-left: 1rem;
+    }
+
+    .banner__hero {
+      height: 22rem;
+      justify-content: flex-end;
+      background-position: center;
+    }
+
+      .hero__title {
+        margin-top: 5rem;
+        margin-right: 2rem;
+        padding: 2rem 4rem;
+        font-size: 1.33rem;
+        width: auto;
+      }
+
+
+
+    .section__features {
+      justify-content: center;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 3rem 0;
+    }
+
+        .section__features .feature:first-child {
+          margin-left: 5rem;
+        }
+
+        .section__features .feature:last-child {
+          margin-right: 5rem;
+        }
+
+      .feature {
+        height: 8rem;
+        width: auto;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+        .feature__img {
+          margin-bottom: 0;
+        }
+
+        .feature__text {
+          margin-bottom: 0;
+          width: 80%;
+        }
+
+        .feature__text,
+        .highlight__text {
+          font-size: 1rem;
+        }
+
+
+
+    .highlights {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+      .highlight {
+        width: 35%;
+        text-align: left;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+        .highlight:first-child {
+          margin-right: 3rem;
+        }
+
+        .highlight__title {
+          width: 75%;
+          text-align: left;
+          padding-left: 1rem;
+        }
+
+
+
+    .copyright {
+      justify-content: flex-start;
+    }
+
+      .copyright__logo {
+        margin-right: 1rem;
+        margin-left: 4rem;
+      }
+
+  }
