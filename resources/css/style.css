@@ -17,11 +17,11 @@
 #SETUP
 \*----------*/
 
-html {
-  font-family: "Helvetica", sans-serif;
-  font-size: 18px;
-  line-height: 1.4;
-}
+  html {
+    font-family: "Helvetica", sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+  }
 
 
 
@@ -31,14 +31,14 @@ html {
 #COLORS
 \*----------*/
 
-.color__primary, {
-  color: cadetblue;
-}
+  .color__primary, {
+    color: cadetblue;
+  }
 
-.color__primary--bg {
-  background-color: cadetblue;
-  color: white;
-}
+  .color__primary--bg {
+    background-color: cadetblue;
+    color: white;
+  }
 
 
 
@@ -72,18 +72,48 @@ html {
 #HERO-BANNER-SECTION
 \*----------*/
 
-.hero-banner {
-  background-image: url("../images/glasses-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 20%;
-  height: 17rem;
-}
-
-  .hero-banner__title {
-    margin-top: 9rem;
-    padding: 1rem 0;
-    background-color: white;
-    text-align: center;
-    font-weight: bold;
+  .hero-banner {
+    background-image: url("../images/glasses-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+    height: 17rem;
   }
+
+    .hero-banner__title {
+      margin-top: 9rem;
+      padding: 1rem 0;
+      background-color: white;
+      text-align: center;
+      font-weight: bold;
+    }
+
+
+
+
+
+/*----------*\
+#HERO-BANNER-SECTION
+\*----------*/
+
+  .features-section {
+    margin: 3.77rem 0;
+    flex-wrap: wrap;
+  }
+
+    .feature {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+      .feature__img {
+        width: 3.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .feature__text {
+        margin-bottom: 1.54rem;
+        width: 22%;
+        text-align: center;
+        font-size: 0.77rem;
+      }
