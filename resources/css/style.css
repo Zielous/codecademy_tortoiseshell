@@ -1,0 +1,26 @@
+/*
+* Start Mobile First
+*
+* Test out menu drawer functionality!
+*
+* Phone 480px
+* Tablet 768px
+* Desktop 1024px
+*
+*/
+
+
+
+/* Make sure to add shortcuts to github! to */
+
+html {
+  font-size: 18px;
+}
+
+/*----------*\
+#COLORS
+\*----------*/
+
+.color__primary {
+  color: cadetblue;
+}

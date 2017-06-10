@@ -1,24 +1,33 @@
-/*
-    https://github.com/zielous/visiborder
-    v1.3 | 20170609
-    License: none (public domain)
+/******
 
+    https://github.com/zielous/zielhacks
+    v1.5 | 20170610
+    License: None (public domain)
+
+    --- ABOUT
     This style sheet is designed to provide easy visual indicators while building your HTML, complimenting the use of DevTools
 
+    --- INSTRUCTIONS
     Load me AFTER any reset.css but BEFORE any other CSS files
-*/
 
+    Comment out any elements below which you don't want to see highlighted
+
+    In your HTML, use the classes vb1, vb2, and vb3 to highlight specific elements
+
+    Once you are done, comment out the link to this file from your head so you can re-use it again when needed later
+
+******/
 
 html {
   background: repeating-linear-gradient(
-  45deg,
+  40deg,
   whitesmoke,
   whitesmoke 5px,
   lightgray 5px,
   lightgray 10px);
 }
 
-div {
+div, nav, section, article, footer {
   outline: 1px solid red;
 }
 
@@ -50,5 +59,3 @@ li {
 .vb3 {
   border: 2px solid blue;
 }
-
-*/
