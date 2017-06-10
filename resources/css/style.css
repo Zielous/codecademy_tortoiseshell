@@ -281,6 +281,10 @@
           padding-left: 1rem;
         }
 
+        .highlight__text {
+          font-size: 1rem;
+        }
+
 
 
     .copyright {
@@ -293,3 +297,56 @@
       }
 
   }
+
+
+
+@media only screen
+  and (min-width: 1024px) {
+  /* Selectors for desktop screens and bigger */
+
+  .header--float {
+    margin-top: 1rem;
+    position: relative;
+  }
+
+    .header__area {
+      width: 960px;
+    }
+
+    .below-header {
+      margin-top: -7rem;
+    }
+
+  .banner__hero {
+    height: 30rem;
+    background-size: cover;
+   }
+
+    .hero__title {
+      width: 30rem;
+      margin-right: 7rem;
+      padding: 3rem 2.5rem;
+      line-height: 1.2;
+      font-size: 2rem;
+    }
+
+  .section__features {
+    justify-content: center;
+  }
+
+    .feature {
+      margin-right: 6rem;
+    }
+
+    .section__features .feature:first-child {
+      margin-left: 0;
+    }
+
+    .section__features .feature:last-child {
+      margin-right: 0;
+    }
+
+  .highlight__title {
+    width: 10rem;
+
+}
