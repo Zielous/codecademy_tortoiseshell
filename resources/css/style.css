@@ -23,12 +23,14 @@
     line-height: 1.4;
   }
 
-
+  .container--maxwidth {
+    width: 95%;
+  }
 
 
 
 /*----------*\
-#COLORS
+#COLORS-FONTS
 \*----------*/
 
   .color__primary, {
@@ -40,7 +42,10 @@
     color: white;
   }
 
-
+.caps__upper {
+  font-weight: bold;
+  text-align: center;
+}
 
 
 
@@ -85,7 +90,7 @@
       padding: 1rem 0;
       background-color: white;
       text-align: center;
-      font-weight: bold;
+      width: 100%;
     }
 
 
@@ -117,3 +122,23 @@
         text-align: center;
         font-size: 0.77rem;
       }
+
+
+/*----------*\
+#HIGHLIGHTS-SECTION
+\*----------*/
+
+  .highlights,
+  .highlight {
+      flex-direction: column;
+    }
+
+    .highlight__title {
+      width: 100%;
+      padding: 0.5rem 0;
+    }
+
+    .highlight__text {
+      margin: 1rem 0 4rem 0;
+      font-size: 0.77rem;
+    }
