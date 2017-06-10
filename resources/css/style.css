@@ -13,14 +13,53 @@
 
 /* Make sure to add shortcuts to github! to */
 
+/*----------*\
+#SETUP
+\*----------*/
+
 html {
+  font-family: "Helvetica", sans-serif;
   font-size: 18px;
+  line-height: 1.4;
 }
+
+
+
+
 
 /*----------*\
 #COLORS
 \*----------*/
 
-.color__primary {
+.color__primary, {
   color: cadetblue;
 }
+
+.color__primary--bg {
+  background-color: cadetblue;
+  color: white;
+}
+
+
+
+
+
+/*----------*\
+#HEADER-SECTION
+\*----------*/
+
+  .header__logo {
+    justify-content: flex-start;
+    margin-left: 2rem;
+  }
+
+    .logo__img {
+      height: 1.5rem;
+    }
+
+  .header__menu {
+    justify-content: flex-end;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }

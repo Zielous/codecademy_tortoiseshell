@@ -63,6 +63,7 @@
   * stretch to full width of screen
   *
   * Change value below to provide a global margin on left and right
+  * Great for site containers with banner overflow effects
   *
   */
   width: 100%;
