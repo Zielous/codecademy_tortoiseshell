@@ -1,0 +1,54 @@
+/*
+    https://github.com/zielous/visiborder
+    v1.3 | 20170609
+    License: none (public domain)
+
+    This style sheet is designed to provide easy visual indicators while building your HTML, complimenting the use of DevTools
+
+    Load me AFTER any reset.css but BEFORE any other CSS files
+*/
+
+
+html {
+  background: repeating-linear-gradient(
+  45deg,
+  whitesmoke,
+  whitesmoke 5px,
+  lightgray 5px,
+  lightgray 10px);
+}
+
+div {
+  outline: 1px solid red;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  outline: 2px dashed orange;
+}
+
+p, span {
+  outline: 2px dashed green;
+}
+
+img {
+  outline: 2px dashed turquoise;
+}
+
+
+li {
+  outline: 2px dashed yellow;
+}
+
+.vb1 {
+  border: 2px solid aqua;
+}
+
+.vb2 {
+  border: 2px solid fuchsia;
+}
+
+.vb3 {
+  border: 2px solid blue;
+}
+
+*/
